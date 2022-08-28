@@ -1,0 +1,29 @@
+.box{width: 400px;}
+.content{padding-top: 130px;}
+.content a{color: #000;}
+.content-nr{width: 100%;  display: flex; justify-content: space-around; flex-wrap: wrap;}
+.content-nr .box{margin-bottom: 50px; text-align: center; border-radius: 10px 10px; box-shadow: 0px 0px 10px #000;}
+.content-nr .box img{border-radius: 10px 10px 0 0}
+
+
+.content-n{width: 100%; height: 800px; margin: 0px auto;}
+.content-n>div{margin: 50px 0;}
+
+.zwjs{width: 70%; height: 50%; position: relative; top: 5%;}
+.zwjs .js{width: 90%; height: 200px; margin: 0 auto;}
+.zwjs .js li{width: 32px;  font-size: 32px; margin-left: 10px; float: left;}
+.zwjs .js .xuan{height: 200px; font-size: 32px; margin-left: 92px; color: #fff; background: #1A293C; float: left; opacity: 0; transition: .6s;}
+.zwjs .js .cang{position: relative; left: -5%; opacity: 0; transition: .6s;}
+
+.xq{width: 800px; height: 100px; margin: 0 auto; text-align: center; position: relative; top: 15%;}
+.xq dl,dt,dd{font-size: 32px; display: block;}
+.xq dt{color: #fff; background: #1A293C; opacity: 0; transition: 1s;}
+.xq dd{position: relative; top: -20%; opacity: 0; transition: 1s;}
+
+.jn{width: 800px; height: 215px; margin: 0 auto; text-align: center; position: relative; top: 0%;}
+.jn dl,dt,dd{font-size: 32px; display: block;}
+.jn dt{color: #fff; background: #1A293C; opacity: 0; transition: 1s;}
+.jn dd{position: relative; top: -20%; opacity: 0; transition: 1s;}
+.jn a{color: #ffffff;}
+.zyfl{color: #ffffff; background: #1A293C;} .ps{background: #31A8FF;} .ai{background: #FF7C00;} .pr{background: #D230FF;} .ae{background:#9A99FF;} .html{background: #D94924;} .css{background: #0072E6;} .javas{background: #D1B514;} .jq{background: #0669AD;}
+.rz{color:  #1A293C;;}
