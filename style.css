@@ -12,7 +12,7 @@ h1,h2,p,li,a{text-decoration: none; list-style: none; font-weight:normal}
 .banner{font-family:"plantc",serif;background:#ffffff;color:#000;--size-h1:calc(42px + (88 - 42) * var(--view-minmax));--size-h2:calc(20px + (28 - 20) * var(--view-minmax));min-height:110vh;display:flex;width:100%;justify-content:center;align-items:center}
 .banner header{display:grid;grid-template-columns:minmax(20%,330px) 75px minmax(max-content,1fr) 75px minmax(20%,300px);grid-template-rows:176px 55px minmax(max-content,1fr) 35px 175px;grid-template-areas:". . . . rs""ls . . . rs""ls . h1 . rs""ls . h2 . rs""ls . h2 . .";transform:translateY(-88px)}
 .banner h1{grid-area:h1;line-height:calc(var(--size-h1) * 1.382);font-size:var(--size-h1);align-self:center;transform:translateZ(0)}
-.banner h2{grid-area:h2;line-height:calc(var(--size-h2) + 10px);font-size:var(--size-h2);opacity:.8}
+.banner h2{grid-area:h2;line-height:calc(var(--size-h2) + 10px);font-size:var(--size-h2);opacity:.8;z-index: 1;}
 .slice{width:100%;height:100%;background-image:url("imgs/1661226235769.jpg");background-size:cover;box-shadow:0 20px 90px 0 rgba(0,0,0,.08),0 9px 30px 0 rgba(0,0,0,.1)}
 .slice.left{grid-area:ls;background-position:left; position: relative; left: -600px;}
 .slice.right{grid-area:rs;background-position:right; position: relative; right: -620px;}
