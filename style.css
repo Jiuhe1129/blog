@@ -9,7 +9,7 @@ h1,h2,p,li,a{text-decoration: none; list-style: none; font-weight:normal}
 .nav ul li{font-weight: 600; line-height: 90px; }
 
 :root{--view-minmax:calc((100vw - 500px) / (1920 - 500))}
-.banner{font-family:"plantc",serif;background:#ffffff;color:#000;--size-h1:calc(42px + (88 - 42) * var(--view-minmax));--size-h2:calc(20px + (28 - 20) * var(--view-minmax));min-height:110vh;display:flex;width:100vw;justify-content:center;align-items:center}
+.banner{font-family:"plantc",serif;background:#ffffff;color:#000;--size-h1:calc(42px + (88 - 42) * var(--view-minmax));--size-h2:calc(20px + (28 - 20) * var(--view-minmax));min-height:110vh;display:flex;width:100%;justify-content:center;align-items:center}
 .banner header{display:grid;grid-template-columns:minmax(20%,330px) 75px minmax(max-content,1fr) 75px minmax(20%,300px);grid-template-rows:176px 55px minmax(max-content,1fr) 35px 175px;grid-template-areas:". . . . rs""ls . . . rs""ls . h1 . rs""ls . h2 . rs""ls . h2 . .";transform:translateY(-88px)}
 .banner h1{grid-area:h1;line-height:calc(var(--size-h1) * 1.382);font-size:var(--size-h1);align-self:center;transform:translateZ(0)}
 .banner h2{grid-area:h2;line-height:calc(var(--size-h2) + 10px);font-size:var(--size-h2);opacity:.8}
@@ -23,7 +23,7 @@ h1,h2,p,li,a{text-decoration: none; list-style: none; font-weight:normal}
 .main-box{overflow-y: auto;}
 .main-box::-webkit-scrollbar{display: none;}
 .main-nr{width: 200%; display: flex; justify-content: space-between; margin-top: 5%; padding: 0 80px;  overflow-x: auto; position: relative; left: 1900px; transition: .6s;}
-.box{width: 40vw; margin-right: 20px;}
+.box{width: 40%; margin-right: 20px;}
 .box img{width: 100%;}
 .box a{font-size: 18px;}
 .box .time{font-size: 13px; color: #6f6f6f;}
@@ -46,5 +46,11 @@ h1,h2,p,li,a{text-decoration: none; list-style: none; font-weight:normal}
 }
 
 @media (max-width:900px){.banner header{grid-template-columns:50px 110px 1fr 150px;grid-template-rows:190px 16px 100px 180px 120px;grid-template-areas:". h1 h1 h1"". . . rs"". h2 h2 rs""ls ls . rs""ls ls . .";transform:translateY(10vh)}
+.banner{min-height:100vh;}
 .banner h2{grid-column-end:rs}
+
+.main-nr{padding: 0 20px;}
+.box{width: 100%;}
+.box img{width: 500px;}
+.main-box{position: relative; top: 100px;}
 }

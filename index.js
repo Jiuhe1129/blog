@@ -24,10 +24,22 @@ $(window).scroll(function () {
         $(".main").css("background", "#fff")
     }
 
-    if (top >= 800) {
+    if (top >= 700) {
         $(".main-nr").css("left", "0")
     } else {
         $(".main-nr").css("left", "1900px")
-
     }
+
+    $(function () {
+        //获取浏览器宽度
+        var _width = $(window).width();
+        if (_width < 900) {
+            if (top >= 300) {
+                $(".main-nr").css("left", "0")
+            } else {
+                $(".main-nr").css("left", "1900px")
+            }
+        }
+    });
 })
+
