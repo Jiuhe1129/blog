@@ -18,18 +18,24 @@ $(window).scroll(function () {
     var top = $(window).scrollTop();
     console.log(top);
 
-    if (top >= 105) {
-        $(".main").css("background", "#141414")
-    } else {
-        $(".main").css("background", "#fff")
-    }
-
-    if (top >= 700) {
-        $(".main-nr").css("left", "0")
-    } else {
-        $(".main-nr").css("left", "1900px")
-    }
-
+    $(function () {
+        //获取浏览器宽度
+        var _width = $(window).width();
+        if (_width > 900) {
+            if (top >= 105) {
+                $(".main").css("background", "#141414")
+            } else {
+                $(".main").css("background", "#fff")
+            }
+        
+            if (top >= 700) {
+                $(".main-nr").css("left", "0")
+            } else {
+                $(".main-nr").css("left", "1900px")
+            }
+        }
+    });
+    
     $(function () {
         //获取浏览器宽度
         var _width = $(window).width();
